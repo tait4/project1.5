@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Milwaukee Bucks - Home page</title>
+
+ <link id='csslink' rel="stylesheet" href="main.css" />
+   <script>
+	    function toggleCSS() {
+          
+          var currentCSS = document.getElementById('csslink');
+
+          
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+  </script>
+  </head>
+  <body>
+     <header>
+        <h1>Milwaukee Bucks</h1>
+        <nav>
+           <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Page2.html">Page 2</a></li>
+              <li><a href="https://www.espn.com/nba/team/stats/_/name/mil/milwaukee-bucks" target="_blank">Game Stats</a></li>
+              <li><a href="https://shop.bucks.com/?gclid=CjwKCAjw9-6oBhBaEiwAHv1QvA-VrIJgPJa1gvtuH27j7Hhk9-Y9EeK7cQa7ec7CdsG15Kk1GFUraBoCxMoQAvD_BwE" target="_blank">Merchandise</a></li>
+              <li><a href="https://www.instagram.com/bucks/?hl=en" target="_blank">Instagram Page</a></li>
+           </ul>
+        </nav>
+     </header>
+
+<main>
+       <article>
+           <h2>Fun Facts! </h2>
+           <ul>
+               <li>The name of the Buck's mascot is Bango</li>
+	       <li>The motto for the team is "Fear the Deer"</li>
+	       <li>The teams colors are blue,green, and cream.</li>
+               <li>First team to win a champion within their first three years in the league</li>
+               <li>The Bulls are the Buck's rival.</li>
+               <li>The bucks are the number one rebounding team in the league</li>
+            </ul>
+
+
+           <h2>Team Statistics</h2>
+
+          <table>
+              <caption>Team Statistics</caption>
+                  <tr>
+                      <th>Average points per game</th>
+
+                      <th>Field goal percentage</th>
+
+                     <th>Assists per game</th>
+
+                     <th>Rebounds per game<th>
+                  </tr>
+                  <tr>
+                      <td>116.9</td>
+                      <td>47.3</td>
+                      <td>25.8</td>
+                      <td>48.6</td>
+                  </tr>
+             </table>
+       </article>
+
+  <button onclick="toggleCSS()">Switch Style</button>
+   </main>
+
+     <footer>
+        <p>
+           &copy Milwaukee Bucks
+        </p>
+     </footer>
+  </body>
+</html>
